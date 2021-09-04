@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word Boundaries</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- link rel="stylesheet" href="css/style.css" type="text/css" / -->
+  <link rel="icon" type="image/jpg" href="images/booktiny.jpg" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/site.js" type="text/javascript"></script>
+  <!-- link rel="stylesheet" href="css/style.css" type="text/css" / -->
+  <link rel="stylesheet" href="css/bs-style.css" type="text/css" />
+  <link rel="icon" type="image/jpg" href="images/booktiny.jpg" />
+</head>
+
+<body>
+
+<!-- Header & nav --> 
+<nav class="navbar navbar-default navbar-fixed-top nav-header">
+  <div class="container">
+
+  <header>
+  <div id="site-logo"><a href="index.html">
+    <img src="images/ilang-edition2013.jpg" alt="site logo"></a></div>
+  <h1>I-Language</h1>
+  <h2>An Introduction to Linguistics as Cognitive Science</h2>
+  </header>
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar"> Menu
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button> 
+  </div> <!-- /.navbar-header collapsed --> 
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="nav nav-justified">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Book Sample</a>
+        <ul class="dropdown-menu">
+          <li><a href="table-of-contents.html">Table of Contents</a></li>
+          <li><a href="sample-chapter.html">Chapter 1</a></li>
+        </ul></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Audio Resources</a>
+        <ul class="dropdown-menu">
+          <li><a href="word-boundaries.html">Exercise 2.6.1</a></li>
+          <li><a href="english-t.html">English T's</a></li>
+          <li><a href="turkish-vowels.html">Turkish Vowels</a></li>
+        </ul></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching Resources</a>
+        <ul class="dropdown-menu">
+          <li><a href="class-slides.html">Class Slides</a></li>
+          <li><a href="solutions.html">Exercise Solutions</a></li>
+        </ul></li>
+      <li><a href="links.html">Links</a></li>
+      <!-- li><a href="links.html">About</a></li -->
+    </ul>
+  </div>
+
+  </div> <!-- /.container -->
+</nav>
+
+
+<main class="main">
+<div class="container">
+	<section class="center">
+		<h2>Exercise 2.6.1: Word Boundaries </h2>
+		<p>Here is the audio for the Exercise 2.6.1. Download the wave file (ilang.wav) and open it with a sound editing program such as <a href="http://www.fon.hum.uva.nl/praat/" target="_blank">Praat</a> which is free to download. (Another sound editing program is <a href="http://www.audacityteam.org/download/" target="_blank">Audacity</a>, also free.) </p>
+		<p>The video below shows how it sounds and looks like when you open the file with Praat. The top part is the waveform and the bottom part is the spectrogram of the audio. You only need the waveform to do the exercise, it will be easier to work with. </p>
+
+		<div class="button-wrap">
+		<a href="media/wav/ilang.wav" class="download-button">Download .wav</a></div> <!-- download attribute in anchor tag not supported in Safari nor IE -->
+			<!-- To force browser to download linked file, add .htaccess file in the folder that contains the to-be-downloaded files. .htaccess file must specify the file type(s) that is to be force-downloaded.  
+			See https://www.drupal.org/node/417866 and http://stackoverflow.com/questions/11935672/link-to-force-download-of-mp3-files-to-default-downloads-folder 
+			Somehow the ilang.wav in bare media folder wasn't recognized by .htaccess (I really don't get it) so 
+			needed to wrap it in wav folder -->
+		
+   <div class="embed-responsive">   
+    <video controls>
+			<source src="media/ilang.mp4">
+				Your browser does not support HTML5 video.
+		</video>
+   </div> 
+
+	</section>
+</div>
+
+</main>
+
+<footer class="footer"> 
+    <ul class="no-bullet">
+      <li><a href="http://www.concordia.ca/" title="link to Concordia University website">Concordia University</a></li>
+      <li><a href="https://global.oup.com/academic/" title="link to Oxford University Press Academic catalogue">OUP</a></li>
+      <li><a href="credits.html">Site credits &amp; Errata</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
