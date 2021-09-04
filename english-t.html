@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English T's</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- link rel="stylesheet" href="css/style.css" type="text/css" / -->
+  <link rel="icon" type="image/jpg" href="images/booktiny.jpg" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/site.js" type="text/javascript"></script>
+  <!-- link rel="stylesheet" href="css/style.css" type="text/css" / -->
+  <link rel="stylesheet" href="css/bs-style.css" type="text/css" />
+  <link rel="icon" type="image/jpg" href="images/booktiny.jpg" />
+</head>
+
+<body>
+
+<!-- Header & nav --> 
+<nav class="navbar navbar-default navbar-fixed-top nav-header">
+	<div class="container">
+
+	<header>
+	<div id="site-logo"><a href="index.html">
+		<img src="images/ilang-edition2013.jpg" alt="site logo"></a></div>
+	<h1>I-Language</h1>
+	<h2>An Introduction to Linguistics as Cognitive Science</h2>
+	</header>
+
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar"> Menu
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+			</button>	
+	</div> <!-- /.navbar-header collapsed --> 
+
+	<div class="collapse navbar-collapse" id="main-navbar">
+		<ul class="nav nav-justified">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Book Sample</a>
+				<ul class="dropdown-menu">
+					<li><a href="table-of-contents.html">Table of Contents</a></li>
+					<li><a href="sample-chapter.html">Chapter 1</a></li>
+				</ul></li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Audio Resources</a>
+				<ul class="dropdown-menu">
+					<li><a href="word-boundaries.html">Exercise 2.6.1</a></li>
+					<li><a href="english-t.html">English T's</a></li>
+					<li><a href="turkish-vowels.html">Turkish Vowels</a></li>
+				</ul></li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching Resources</a>
+				<ul class="dropdown-menu">
+					<li><a href="class-slides.html">Class Slides</a></li>
+					<li><a href="solutions.html">Exercise Solutions</a></li>
+				</ul></li>
+			<li><a href="links.html">Links</a></li>
+			<!-- li><a href="links.html">About</a></li -->
+		</ul>
+	</div>
+
+	</div> <!-- /.container -->
+</nav>
+
+<!-- TODO: Make NON STICKY FOOTER 
+i.e. flush the footer to the bottom of the page (not screen) when there's 
+enough content in the page. Small content page, stick the footer at the 
+bottom of the screen. Footer format: horizontal nav bar for small screen too, 
+manipulate with media queries
+
+<div class="navbar navbar-fixed-bottom nav-footer" role="navigation">
+  <div  class="container">
+    <ul class="nav nav-justified">
+      <li><a href="">Concordia University</a></li>
+      <li><a href="">OUP</a></li>
+      <li><a href="">Errata</a></li>
+      <li><a href="">Site credit</a></li>
+    </ul>
+  </div>
+</div>
+ / footer --> 
+
+
+<main class="main">
+<div class="container">
+	<section class="center">
+		<h2>English <i>t</i>'s </h2>
+		<p>This page accompanies the discussion in Chapter 6 about allophonies, equivalence classes and the construction of experience. Listen to the recordings of English speakers from different parts of the world saying </p>
+			<blockquote>That cat, Atom, didn't want to stare at the two thin rats at ease atop the atomic pot.</blockquote> 
+
+		<p> How many <i>t</i>'s do you hear? You can download the .wav audio files and open them with <a href="http://www.fon.hum.uva.nl/praat/" target="_blank">Praat</a> or <a href="http://www.audacityteam.org/download/" target="_blank">Audacity</a> to isolate words or part of words. Try to find flaps, glottal stops, plain <i>t</i>'s and aspirated <i>t</i>'s in these various dialects. </p>
+
+
+		<div class="container"> 
+			<div class="row">
+
+				<div class="slidebox col-xs-10 col-md-4">
+					<figure>
+						<figcaption>Charles: Brooklyn, New York</figcaption>
+						<audio controls>
+							<source src="media/en-charles.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>	
+					</figure>
+					<div class="button-wrap"> 
+					<a href="media/en-charles.wav" class="download-button">Download .wav</a> <!-- download attribute not supported in Safari and IE -->
+					<!-- To force browser to download linked file, add .htaccess file in the folder that contains the to-be-downloaded files. .htaccess file must specify the file type(s) that is to be force-downloaded.  
+					See https://www.drupal.org/node/417866 and http://stackoverflow.com/questions/11935672/link-to-force-download-of-mp3-files-to-default-downloads-folder -->
+					</div>
+				</div>
+				<div class="slidebox col-xs-10 col-md-4">
+					<figure>
+						<figcaption>Nick: Bath, England</figcaption>
+						<audio controls>
+							<source src="media/en-nick.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>	
+					</figure>
+					<div class="button-wrap"> 
+					<a href="media/en-nick.wav" class="download-button">Download .wav</a> 
+					</div>
+				</div>
+			</div> <!-- /.row-->
+
+			<div class="row">
+				<div class="slidebox col-xs-10 col-md-4">
+					<figure>
+						<figcaption>Marc: West London, England</figcaption>
+						<audio controls>
+							<source src="media/en-marc.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>	
+					</figure>
+					<div class="button-wrap"> 
+					<a href="media/en-marc.wav" class="download-button">Download .wav</a> 
+					</div>
+				</div>
+				<div class="slidebox col-xs-10 col-md-4">
+					<figure>
+						<figcaption>Edwin: Edinburgh, Scotland</figcaption>
+						<audio controls>
+							<source src="media/en-edwin.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>	
+					</figure>
+					<div class="button-wrap"> 
+					<a href="media/en-edwin.wav" class="download-button">Download .wav</a> 
+					</div>
+				</div>
+			</div> <!-- /.row-->
+			
+			<div class="row">	
+				<div class="slidebox col-xs-10 col-md-4">
+					<figure>
+						<figcaption>Erich: Melbourne, Australia</figcaption>
+						<audio controls>
+							<source src="media/en-erich.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>	
+					</figure>
+					<div class="button-wrap"> 
+					<a href="media/en-erich.wav" class="download-button">Download .wav</a> 
+					</div>
+				</div>
+				<div class="slidebox col-xs-10 col-md-4">
+					<figure>
+						<figcaption>Alexis: Saskatchewan, Canada</figcaption>
+						<audio controls>
+							<source src="media/en-alexis.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>	
+					</figure>
+					<div class="button-wrap"> 
+					<a href="media/en-alexis.wav" class="download-button">Download .wav</a> 
+					</div>
+				</div>
+			</div> <!-- /.row -->
+
+			<div class="row">
+				<div class="slidebox col-xs-10 col-md-4">
+					<figure>
+						<figcaption>Pauline: Montreal, Canada</figcaption>
+						<audio controls>
+							<source src="media/en-pauline.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>	
+					</figure>
+					<div class="button-wrap"> 
+					<a href="media/en-pauline.wav" class="download-button">Download .wav</a> 
+					</div>
+				</div>
+
+				<div class="slidebox col-xs-10 col-md-4">
+					<figure>
+						<figcaption>Brent: Winnipeg, Canada</figcaption>
+						<audio controls>
+							<source src="media/en-brent.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>	
+					</figure>
+					<div class="button-wrap"> 
+					<a href="media/en-brent.wav" class="download-button">Download .wav</a> 
+					</div>
+				</div>
+
+			</div> <!-- /.row -->
+
+		</div> <!--/.container -->	
+
+
+	</section>
+</div> 
+
+</main>
+<footer class="footer"> 
+		<ul class="no-bullet">
+			<li><a href="http://www.concordia.ca/" title="link to Concordia University website">Concordia University</a></li>
+			<li><a href="https://global.oup.com/academic/" title="link to Oxford University Press Academic catalogue">OUP</a></li>
+			<li><a href="credits.html">Site credits &amp; Errata</a></li>
+		</ul>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turkish Vowels</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- link rel="stylesheet" href="css/style.css" type="text/css" / -->
+  <link rel="icon" type="image/jpg" href="images/booktiny.jpg" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/site.js" type="text/javascript"></script>
+  <!-- link rel="stylesheet" href="css/style.css" type="text/css" / -->
+  <link rel="stylesheet" href="css/bs-style.css" type="text/css" />
+  <link rel="stylesheet" href="css/mobile-vowels.css" type="text/css" />
+  <link rel="stylesheet" href="css/tablet-vowels.css" type="text/css" />
+  <link rel="stylesheet" href="css/bs-vowels.css" type="text/css" />
+  <script src="js/turkish-vowels.js" type="text/javascript"></script>
+  <link rel="icon" type="image/jpg" href="images/booktiny.jpg" />
+</head>
+
+<body>
+
+<!-- Header & nav --> 
+<nav class="navbar navbar-default navbar-fixed-top nav-header">
+  <div class="container">
+
+  <header>
+  <div id="site-logo"><a href="index.html">
+    <img src="images/ilang-edition2013.jpg" alt="site logo"></a></div>
+  <h1>I-Language</h1>
+  <h2>An Introduction to Linguistics as Cognitive Science</h2>
+  </header>
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar"> Menu
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button> 
+  </div> <!-- /.navbar-header collapsed --> 
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="nav nav-justified">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Book Sample</a>
+        <ul class="dropdown-menu">
+          <li><a href="table-of-contents.html">Table of Contents</a></li>
+          <li><a href="sample-chapter.html">Chapter 1</a></li>
+        </ul></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Audio Resources</a>
+        <ul class="dropdown-menu">
+          <li><a href="word-boundaries.html">Exercise 2.6.1</a></li>
+          <li><a href="english-t.html">English T's</a></li>
+          <li><a href="turkish-vowels.html">Turkish Vowels</a></li>
+        </ul></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching Resources</a>
+        <ul class="dropdown-menu">
+          <li><a href="class-slides.html">Class Slides</a></li>
+          <li><a href="solutions.html">Exercise Solutions</a></li>
+        </ul></li>
+      <li><a href="links.html">Links</a></li>
+      <!-- li><a href="links.html">About</a></li -->
+    </ul>
+  </div>
+
+  </div> <!-- /.container -->
+</nav>
+
+
+<main class="main"> 
+<div class="container">
+<section class="center"> 
+  <h2> Turkish Vowels </h2>
+  <p>Use the feature selector to highlight vowels that correspond to the feature specifications. Roll your mouse over the vowels in the vowel chart to see the larger photos of the face as well as the feature specification and the spectrogram of the vowel. Click the vowels in the chart to play the sound of the vowel. The symbols in bold font are Turkish orthographic forms of the vowels while the symbols in square blackets are IPA. </p>
+</section>
+
+
+<div class="container-fluid">
+
+<!--  turkish page left -->
+<div class="turkish-page-left">
+
+<!-- Feature selector --> 
+<div id="feature-selector">
+
+<div class="row">
+  <div class="col-md-4 col-sm-12">
+    <div class="row">
+      <div class="selector-label col-xs-3">Height</div>
+      <select class="selector-dropdown col-xs-7 col-md-11" id="height" name="height" onchange="highlightMatchingVowels()">
+          <option value="both">Both values</option>
+          <option value="high">+HIGH</option>
+          <option value="nonhigh">-HIGH</option>
+      </select>
+    </div>    
+  </div>
+
+  <div class="col-md-4 col-sm-12">
+    <div class="row">
+      <div class="selector-label col-xs-3">Backness</div>
+        <select class="selector-dropdown col-xs-7 col-md-11" id="backness" name="backness" onchange="highlightMatchingVowels()">
+            <option value="both">Both values</option>
+            <option value="back">+BACK</option>
+            <option value="nonback">-BACK</option>
+        </select>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-12">
+    <div class="row">
+      <div class="selector-label col-xs-3">Roundness</div>
+        <select class="selector-dropdown col-xs-7 col-md-11" id="roundness" name="roundness" onchange="highlightMatchingVowels()">
+            <option value="both">Both values</option>
+            <option value="round">+ROUND</option>
+            <option value="nonround">-ROUND</option>
+        </select>
+    </div>
+  </div>
+</div>
+
+  <div class="button button-clear"><a href="" onclick='clearSelection()'>Clear selection</a></div>
+
+</div> <!-- /#feature-selector --> 
+
+
+<div class="vowel-space">
+
+<div class="vowel-row row-high">
+  <div class="parallelogram para-no-right para-no-bottom">
+    <div class="vowel-box" id="vowel-I" onmouseover="showVowel(this)" onclick="playVowel(this)" onmouseout="">
+      <img class="vowel-photo" alt="+HIGH -BACK -ROUND" src="images/face-i.jpg">
+      <img class="vowel-photo-profile" alt="high-front-nonround profile" src="images/fp-i.jpg">
+      <div class="vowel-orth">i</div>
+      <div class="vowel-ipa">[i]</div>
+      <img class="vowel-wave" src="images/wave-i.png" alt="i-spectrogram">
+      <audio class="vowel-audio">
+      	<source src="turkish-audio/i.mp3" type="audio/mpeg">
+      </audio>
+      <div class="feature-spec">+HIGH -BACK -ROUND</div>
+    </div>
+  </div>
+  <div class="parallelogram para-no-border para-no-bottom">
+    <div class="vowel-box" id="vowel-Y" onmouseover="showVowel(this)" onclick="playVowel(this)" onmouseout="">
+      <img class="vowel-photo" alt="+HIGH -BACK +ROUND" src="images/face-y.jpg">
+      <img class="vowel-photo-profile" alt="hi-front-round profile" src="images/fp-y.jpg">
+      <div class="vowel-orth">&uuml;</div>
+      <div class="vowel-ipa">[y]</div>
+      <img class="vowel-wave" src="images/wave-y.png" alt="y-spectrogram">
+      <audio class="vowel-audio">
+      	<source src="turkish-audio/y.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <div class="parallelogram para-no-border para-no-bottom">
+    <div class="vowel-box" id="vowel-LAXU" onmouseover="showVowel(this)" onclick="playVowel(this)" onmouseout="">
+      <img class="vowel-photo" alt="+HIGH +BACK -ROUND" src="images/face-lax-u.jpg">
+      <img class="vowel-photo-profile" alt="hi-back-nonround profile" src="images/fp-lax-u.jpg">
+      <div class="vowel-orth">&#305;</div>
+      <div class="vowel-ipa">[&#x026F;]</div>
+      <img class="vowel-wave" src="images/wave-lax-u.png" alt="lax-u-spectrogram">
+      <audio class="vowel-audio">
+      	<source src="turkish-audio/lax-u.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <div class="rectangular-box-a">
+    <div class="vowel-box box-non-skew" id ="vowel-U" onmouseover="showVowel(this)" onclick="playVowel(this)" onmouseout="">
+      <img class="vowel-photo" alt="+HIGH +BACK +ROUND" src="images/face-u.jpg">
+      <img class="vowel-photo-profile" alt="hi-back-round profile" src="images/fp-u.jpg">
+      <div class="vowel-orth">u</div>
+      <div class="vowel-ipa">[u]</div>
+      <img class="vowel-wave" src="images/wave-u.png" alt="u-spectrogram">
+      <audio class="vowel-audio">
+      	<source src="turkish-audio/u.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</div>
+
+<div class="vowel-row row-mid">
+  <div class="parallelogram para-no-right para-no-top para-no-bottom">
+    <div class="vowel-box" id="vowel-E" onmouseover="showVowel(this)" onclick="playVowel(this)" onmouseout="">
+      <img class="vowel-photo" alt="-HIGH -BACK -ROUND" src="images/face-e.jpg">
+      <img class="vowel-photo-profile" alt="nonhi-front-nonround profile" src="images/fp-e.jpg">
+      <div class="vowel-orth">e</div>
+      <div class="vowel-ipa">[e]</div>
+      <img class="vowel-wave" src="images/wave-e.png" alt="e-spectrogram">
+      <audio class="vowel-audio">
+      	<source src="turkish-audio/e.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <div class="parallelogram para-no-border para-no-bottom para-no-top">
+    <div class="vowel-box" id="vowel-RDE" onmouseover="showVowel(this)" onclick="playVowel(this)" onmouseout="">
+      <img class="vowel-photo" alt="-HIGH -BACK +ROUND" src="images/face-rd-e.jpg">
+      <img class="vowel-photo-profile" alt="nonhi-front-round profile" src="images/fp-rd-e.jpg">
+      <div class="vowel-orth">&ouml;</div>
+      <div class="vowel-ipa">[&#x0153;]</div>
+      <img class="vowel-wave" src="images/wave-rd-e.png" alt="round-e-spectrogram">
+      <audio class="vowel-audio">
+      	<source src="turkish-audio/rd-e.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <div class="rectangular-box-b">
+    <div class="vowel-box box-non-skew" id="vowel-O" onmouseover="showVowel(this)" onclick="playVowel(this)" onmouseout="">
+      <img class="vowel-photo" alt="-HIGH +BACK +ROUND" src="images/face-o.jpg">
+      <img class="vowel-photo-profile" alt="nonhi-back-round profile" src="images/fp-o.jpg">
+      <div class="vowel-orth">o</div>
+      <div class="vowel-ipa">[o]</div>
+      <img class="vowel-wave" src="images/wave-o.png" alt="o-spectrogram">
+      <audio class="vowel-audio">
+      	<source src="turkish-audio/o.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</div>
+
+<div class="vowel-row row-low">
+  <div class="parallelogram para-wide">
+    <div class="vowel-box" id="vowel-A" onmouseover="showVowel(this)" onclick="playVowel(this)" onmouseout="">
+      <img class="vowel-photo" alt="-HIGH +BACK -ROUND" src="images/face-a.jpg">
+      <img class="vowel-photo-profile" alt="nonhi-back-nonround profile" src="images/fp-a.jpg">
+      <div class="vowel-orth">a</div>
+      <div class="vowel-ipa">[&#x0251;]</div>
+      <img class="vowel-wave" src="images/wave-a.png" alt="a-spectrogram">
+      <audio class="vowel-audio">
+      	<source src="turkish-audio/a.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <div class="rectangular-box-c">
+    <div class="vowel-box-transparent">
+      <div class="vowel-photo-transparent"></div>
+      <div class="vowel-photo-profile-transparent"></div>
+      <div class="vowel-orth">&emsp;</div>
+      <div class="vowel-ipa">&emsp;</div>
+    </div>
+  </div>
+</div>
+
+</div> <!-- vowel-space div -->
+
+</div> <!-- END turkish page left -->
+
+
+<!-- turkish page right --> 
+<div class="turkish-page-right">
+
+  <div class="vowel-box-large">
+    <div id="vowel-photo-large"></div>
+    <div id="vowel-photo-profile-large"></div>
+    <div id="vowel-feature"></div>
+    <div id="vowel-orth-large-box"><p id="vowel-orth-large"></p></div>
+  	<div id="vowel-ipa-large-box"><p id="vowel-ipa-large"></p></div>
+    <div id="vowel-wave-large"></div>
+  </div>
+
+</div> <!-- END turkish page right --> 
+
+
+</div> <!-- /.container-fluid -->
+
+
+
+</div> <!-- container div --> 
+
+</main>
+
+<footer class="footer"> 
+    <ul class="no-bullet">
+      <li><a href="http://www.concordia.ca/" title="link to Concordia University website">Concordia University</a></li>
+      <li><a href="https://global.oup.com/academic/" title="link to Oxford University Press Academic catalogue">OUP</a></li>
+      <li><a href="credits.html">Site credits &amp; Errata</a></li>
+    </ul>
+</footer>
+
+
+</body>
+</html>
+
+
+<!-- script type="text/javascript">
+
+	function showElements(vowel){
+	var v = vowel.children;	
+	document.getElementById('vowel-photo-large').style.backgroundImage = "url(' "+v[0].src+" ')";
+		document.getElementById('vowel-photo-profile-large').style.backgroundImage = "url(' "+v[1].src+" ')";
+	document.getElementById('vowel-feature').innerHTML = v[0].alt;
+	document.getElementById('vowel-orth-large').innerHTML = v[2].innerHTML;
+	document.getElementById('vowel-ipa-large').innerHTML = v[3].innerHTML;
+	document.getElementById('vowel-wave-large').style.backgroundImage = "url(' "+v[4].src+" ')";
+	}
+
+	function playVowel(vowel){
+		var v = vowel.children;
+		v[5].play();
+	}	
+</script -->
+
+<!--script type="text/javascript">
+	function countElements(vowel){
+		var c = document.getElementsByClassName('vowel-box').children;
+		var txt = ""
+		var i; 
+		for (i=0; i < c.length; i++){
+			txt = txt + c[i].tagName + "</br>";
+		}
+		document.getElementById('voweldesc').innerHTML = txt;
+	}
+
+
+	==USING ID==
+	function countElements(){
+		var c = document.getElementById('vowel-box').children.length;
+		document.getElementById('voweldesc').innerHTML = c; 
+	}
+
+	function showElements(){
+		var v = document.getElementsById('vowel-box').children;	
+		var i; 
+		var txt = "";
+		for (i=0; i < v.length; i++){
+			txt = txt + v[i].tagName + "</br>";
+			}
+		document.getElementById('voweldesc').innerHTML = txt;
+	}
+
+
+</script -->
