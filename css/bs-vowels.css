@@ -1,0 +1,391 @@
+/* http://stackoverflow.com/questions/16616846/css-triangle-and-box-inside-one-div
+   http://stackoverflow.com/questions/7920754/how-to-draw-a-trapezium-trapezoid-with-css3 https://css-tricks.com/examples/ShapesOfCSS/ 
+   https://css-tricks.com/examples/ShapesOfCSS/  */
+@media screen and (min-width: 1200px){
+      .turkish-page-left{
+        width: 45%; 
+        height: auto;
+        min-width: 435px;
+        margin-left: 1.5%;
+        display: inline-block;
+        float: left;
+      }
+
+      .turkish-page-right{
+        width: 40%;
+        height: auto;
+        margin-left: 10%;
+        padding: 10px;
+        display: inline-block;
+      }
+
+
+      /* left side vowel chart */
+
+      .vowel-space{
+        width: 650px;
+        height: 350px;
+        margin: 20px;
+        margin-left: 5px;
+        margin-top: 5px;
+      }
+      .vowel-row{
+        width: 100%;
+        height: auto; 
+        margin: ; 
+        padding: ;
+      }
+
+      .row-mid{
+        margin-top: -20px;
+        margin-left: 36px;
+      }
+
+      .row-low{
+        margin-top: -20px;
+        margin-left: 70px;
+      }
+
+      .parallelogram {
+        width: 140px;
+        height: 110px;
+        -webkit-transform: skew(18deg);
+        -moz-transform: skew(18deg);
+        -o-transform: skew(18deg);
+        background: ;
+        display: inline-block;
+        border: 1px solid black;
+        margin-top: 20px;
+        margin-left: -5px;
+        text-align: center;
+      }
+
+      .rectangular-box-a{
+        width: 140px; 
+        height: 110px; 
+        margin-left: -24px;
+        border: 1px solid black;
+        border-left: none;
+        border-bottom: none;
+        display: inline-block;
+        text-align: right;
+      }
+
+      .rectangular-box-b{
+        width: 242px; 
+        height: 110px; 
+        margin-left: -23px;
+        border-right: 1px solid black;
+        /* border-left: none;
+        border-top: none;
+        border-bottom: none; */
+        display: inline-block;
+        text-align: right;
+      }
+
+      .rectangular-box-c{
+        width: 187px; 
+        height: 103px; 
+        margin-left: -23px;
+        border: 1px solid black;
+        border-left: none;
+        border-top: none;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .para-wide{
+        width: 300px;
+        height: 98px;
+        border-right: none;
+        border-top: none;
+        text-align: right;
+      }
+
+      .para-no-right{
+        border-right: none;
+      }
+
+      .para-no-border{
+        border-left: none;
+        border-right: none;
+      }
+
+      .para-no-bottom{
+        border-bottom: none;
+      }
+
+      .para-no-top{
+        border-top: none;
+      }
+
+      .vowel-box{
+        width: 105px;
+        height: 95px;
+        border: 1px solid #88a088; /*#e0e0de; */
+        background-color: #fffa8b; /*rgba(255,153,227,0.2); */
+        text-align: center;
+        -webkit-transform: skew(-18deg);
+        -moz-transform: skew(-18deg);
+        -o-transform: skew(-18deg);
+        display: inline-block;
+      }
+
+      .box-non-skew{
+        -webkit-transform: skew(0deg);
+        -moz-transform: skew(0deg);
+        -o-transform: skew(0deg);
+      }
+
+      .hi, .nonhigh{
+        background-color: ;
+      }
+
+      .vowel-box-transparent{
+        width: 105px;
+        height: 95px;
+        border: 1px solid rgba(0,0,0,0);
+        background-color: rgba(0,0,0,0);
+        text-align: center;
+        display: inline-block;
+      }
+
+      .vowel-photo{
+        margin-top: 3px;
+        padding: 0px;
+        width: 49px;
+        height: 50px;
+        background-color: rgba(0,0,255,.7);
+        display: inline-block;
+      }
+
+      .vowel-photo-profile{
+        margin-top: 3px; 
+        padding: 0px;
+        width: 49px;
+        height: 50px;
+        background-color: rgba(0,0,255,.2);
+        display: inline-block;
+      }
+
+      .vowel-photo-transparent{
+        margin-top: 3px;
+        padding: 0px;
+        width: 49px;
+        height: 50px;
+        background-color: rgba(0,0,0,0);
+        display: inline-block;
+      }
+
+      .vowel-photo-profile-transparent{
+        margin-top: 3px; 
+        padding: 0px;
+        width: 49px;
+        height: 50px;
+        background-color: rgba(0,0,0,0);
+        display: inline-block;
+      }
+
+      .vowel-orth{
+        width: 40px;
+        height: 35px; 
+        font-size: 2rem;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+        padding-left: 5px;
+        font-family: "Lucida Grande", Arial, serif;
+      }
+
+      .vowel-ipa{
+        width: 40px;
+        height: 35px; 
+        font-size: 1em;
+        display: inline-block;
+        text-align: left;
+        padding-left: 0px;
+        font-family: Arial, serif;
+        border: ;
+      }
+
+      .vowel-orth-transparent{
+        width: 40px;
+        height: 35px; 
+        font-size: 2rem;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+        padding-left: 5px;
+        font-family: Arial, serif;
+        border: ;
+      }
+
+      .vowel-ipa-transparent{
+        width: 40px;
+        height: 35px; 
+        font-size: 1em;
+        display: inline-block;
+        text-align: left;
+        padding-left: 0px;
+        font-family: Arial, serif;
+        border: ;
+      }
+
+      .feature-spec, .vowel-wave{
+        display: none;
+      }
+
+      /* right side vowel detail */
+
+      .vowel-box-large{
+        width: 420px; 
+        height: auto; 
+        margin-top: 5%;
+        border: 2px solid #53CAAF;
+        border-radius: 10px;
+        background-color: rgba(83, 202, 175, .2);
+      }
+
+      #vowel-photo-large{
+        width: 200px;
+        height: 200px;
+        margin-left: 8px;
+        border: 0px solid;
+        background-color: #6d6d6d;
+        background-image: url('../images/dummyfront.png');
+        background-repeat: no-repeat; 
+        display: inline-block;
+      }
+
+      #vowel-photo-profile-large{
+        width: 200px;
+        height:200px;
+        border: 0px solid; 
+        background-color: #6d6d6d;
+        background-image: url('../images/dummyprofile.png'); 
+        background-repeat: no-repeat;
+        display: inline-block;
+      }
+
+      #vowel-feature{
+        width: 406px;
+        height: 50px; 
+        margin-left: 5px;
+        border: 0px solid;
+        text-align: center;
+        line-height: 130%;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: "Lucida Grande", Arial; 
+        background-color: rgba(83, 202, 175, 0);
+        color: #000099;
+      }
+
+      #vowel-orth-large-box{
+        position: relative;
+        width: 80px; 
+        height: 95px; 
+        margin-left: 5px;
+        border: 0px solid;
+        display: inline-block;
+        text-align: center;
+      }
+      #vowel-orth-large{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        height: 80%;
+        margin-top: -40px;
+        margin-bottom: -64px;
+        font-size: 5rem;
+        font-weight: bold;
+        font-family: "Lucida Grande", Arial, serif;
+      }
+
+      #vowel-ipa-large-box{
+        position: relative;
+        width: 80px; 
+        height: 95px; 
+        border: 0px solid;
+        display: inline-block;
+        text-align: center;
+      } 
+      #vowel-ipa-large{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        height: 80%;
+        margin-top: -21px;
+        font-size: 2.5rem;
+        font-family: Arial, serif;
+      }
+
+      #vowel-wave-large{
+        width: 235px; 
+        height: 95px; 
+        margin-left: -1px;
+        display: inline-block;
+        border: 0px solid
+      }
+
+      /* feature selectors */
+      #feature-selector{
+        margin: 1%;
+        margin-left: ;
+        padding-left: ;
+        float: ;
+      }
+
+      .selector-label{
+        margin: 1%;
+        font-family: "Lucida Grande", "sans serif", Arial; 
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      select{
+        width: 30%;
+        height: 22px;
+        margin: 0.5%;
+        margin-right: 0%;
+        background-color: #fffa8b; 
+        color: #0000D0;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .height, .backness, .roundness{
+        display: none;
+      } 
+
+      .button-clear{
+        margin: 10px 5px 5px 0px;
+        float: none;
+      }
+
+      .button-clear a{
+        padding: 5px;
+        background-color: #0000D0; 
+        color: #fffa8b;
+        font-size: 1.2rem;
+        font-weight: bold;  
+        border: 1px solid #0000D0;
+        float: ;
+      }
+
+      .button-clear a:hover{
+        color: #fffa8b;
+        text-decoration: none; 
+      }
+
+      
+
+}
+
+
+
+
+
+
+
+
